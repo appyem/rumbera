@@ -9,7 +9,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'logo_rumbera.png', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: 'RUMBERA - ¡La rumba que te conecta!',
+        name: 'RUMBERA - ¡La radio que te mueve!',
         short_name: 'RUMBERA',
         description: 'Tu plataforma de música tropical. Escucha en vivo, noticias y eventos.',
         theme_color: '#FF9500',

@@ -149,7 +149,7 @@ export const MainLayout = () => {
                 <img src="/logo_rumbera.png" alt="RUMBERA" className="h-16 w-16 rounded-full object-cover shadow-lg shadow-brand/20 border-2 border-brand/30" />
                 <div className="flex flex-col">
                   <h1 className="text-3d-rumbera text-2xl md:text-3xl leading-none">RUMBERA</h1>
-                  <p className="text-[10px] text-white/70 uppercase tracking-widest">¡La rumba que te conecta!</p>
+                  <p className="text-[10px] text-white/70 uppercase tracking-widest">¡La radio que te mueve!</p>
                 </div>
               </NavLink>
             </div>

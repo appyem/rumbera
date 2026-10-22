@@ -132,7 +132,7 @@ export const HeroSection = () => {
         <div className="relative z-10 p-6 md:p-12 space-y-6 max-w-2xl">
           <div className="space-y-3">
             <h1 className="text-3d-rumbera text-4xl md:text-6xl leading-tight">RUMBERA</h1>
-            <p className="text-base md:text-lg text-text-secondary max-w-xl">Tu plataforma para ¡La rumba que te conecta!. Escucha en vivo, noticias y eventos.</p>
+            <p className="text-base md:text-lg text-text-secondary max-w-xl">Tu plataforma para ¡La radio que te mueve!. Escucha en vivo, noticias y eventos.</p>
           </div>
           <div className="flex flex-wrap gap-3 pt-2">
             <button onClick={handleEscucharAhora} className="flex items-center gap-2 px-6 py-3 rounded-lg bg-brand hover:bg-brand-light text-white font-semibold shadow-lg shadow-brand/30 transition-all hover:scale-105">
