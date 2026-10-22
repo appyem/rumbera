@@ -11,7 +11,7 @@ interface ServiceModalProps {
 export const ServiceModal = ({ service, onClose }: ServiceModalProps) => {
   // WhatsApp Nativo (PC y Móvil)
   const whatsappMessage = encodeURIComponent(`Hola RUMBERA, quiero cotizar el servicio de: ${service.title}`);
-  const whatsappUrl = `https://wa.me/573227027174?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/573148951791?text=${whatsappMessage}`;
 
   // Email Profesional
   const emailSubject = encodeURIComponent(`Cotización de Servicio: ${service.title}`);

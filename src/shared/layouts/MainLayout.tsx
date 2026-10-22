@@ -15,7 +15,7 @@ import { useRadioMetadata } from '../../hooks/useRadioMetadata';
 
 // ✅ CORREGIDO: Ahora usa HTTPS para evitar bloqueos del navegador
 const STREAM_URL = import.meta.env.VITE_RADIO_STREAM_URL || "https://radiohd2.streaminghd.co:7229/stream";
-const WHATSAPP_URL = "https://wa.me/573227027174?text=" + encodeURIComponent("Hola RUMBERA, quiero más información");
+const WHATSAPP_URL = "https://wa.me/573148951791?text=" + encodeURIComponent("Hola RUMBERA, quiero más información");
 
 export const MainLayout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

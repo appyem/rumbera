@@ -23,7 +23,7 @@ export const TarjetaPage = () => {
     eslogan: 'Siempre contigo, Siempre poderosa.',
     logo: '/logo_rumbera.png',
     telefono: '+57 322 702 7174',
-    whatsapp: '573227027174',
+    whatsapp: '573148951791',
     email: 'comercial@lapoderosa.co',
     direccion: 'Risaralda - Caldas',
     web: 'lapoderosa.co'

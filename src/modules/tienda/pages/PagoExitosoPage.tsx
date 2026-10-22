@@ -67,7 +67,7 @@ export const PagoExitosoPage = () => {
       <div className="pt-8 text-sm text-text-muted">
         <p>¿Tiene preguntas sobre su pedido?</p>
         <a 
-          href="https://wa.me/573227027174?text=Hola,%20tengo%20una%20pregunta%20sobre%20mi%20pedido%20" 
+          href="https://wa.me/573148951791?text=Hola,%20tengo%20una%20pregunta%20sobre%20mi%20pedido%20" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-brand hover:underline font-medium"

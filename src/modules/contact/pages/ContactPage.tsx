@@ -88,7 +88,7 @@ export const ContactPage = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-white">Teléfono / WhatsApp</p>
-                  <a href="https://wa.me/573227027174" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary hover:text-brand transition-colors">
+                  <a href="https://wa.me/573148951791" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary hover:text-brand transition-colors">
                     +57 322 702 7174
                   </a>
                 </div>

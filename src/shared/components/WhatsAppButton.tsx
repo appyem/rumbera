@@ -2,7 +2,7 @@ import { MessageCircle } from 'lucide-react';
 
 export const WhatsAppButton = () => {
   // Número nuevo con código de país (57 para Colombia)
-  const phoneNumber = '573227027174';
+  const phoneNumber = '573148951791';
   const message = encodeURIComponent('Hola RUMBERA, quiero más información');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
