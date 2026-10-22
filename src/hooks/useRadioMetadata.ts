@@ -28,7 +28,7 @@ export const useRadioMetadata = () => {
     const fetchMetadata = async () => {
       try {
         // Usamos un proxy CORS gratuito para evitar el bloqueo del navegador
-        const targetUrl = 'https://sapircast.caster.fm:10406/status-json.xsl';
+        const targetUrl = 'https://radiohd2.streaminghd.co:7229/status-json.xsl';
         const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
         
         const response = await fetch(proxyUrl);

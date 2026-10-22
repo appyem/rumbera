@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'logo.jpg', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.ico', 'logo_rumbera.png', 'robots.txt', 'apple-touch-icon.png', 'icon-192x192.png', 'icon-512x512.png'],
       manifest: {
         name: 'RUMBERA - Plataforma de ¡La rumba que te conecta!',
         short_name: 'Rumbera',
