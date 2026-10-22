@@ -25,7 +25,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { getMessaging, getToken } from 'firebase/messaging';
 import app from './config';
 
-const TENANT_ID = 'la-poderosa-4b6ab'; 
+  const TENANT_ID = import.meta.env.VITE_TENANT_ID || 'rumbera';
 
 // ==========================================
 // TIPOS PARA LA PARRILLA DE RADIO
@@ -559,7 +559,7 @@ export const getPublicidadesActivas = async (): Promise<Publicidad[]> => {
 };
 
 // ==========================================
-// 🛒 TIENDA VIRTUAL "LA PODEROSA SHOP"
+// 🛒 TIENDA VIRTUAL "RUMBERA SHOP"
 // FASE 1: Definición de tipos de datos
 // ==========================================
 

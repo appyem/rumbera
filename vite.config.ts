@@ -9,9 +9,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'logo.jpg', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: 'LA PODEROSA - Plataforma de Medios Digitales',
-        short_name: 'La Poderosa',
-        description: 'Tu plataforma de medios digitales. Escucha en vivo, noticias, eventos y más.',
+        name: 'RUMBERA - Plataforma de ¡La rumba que te conecta!',
+        short_name: 'Rumbera',
+        description: 'Tu plataforma para ¡La rumba que te conecta!. Música en vivo, noticias y eventos.',
         theme_color: '#000000',
         background_color: '#0a0a0a',
         display: 'standalone',

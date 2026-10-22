@@ -90,7 +90,7 @@ export const TiendaPage = () => {
     
     if (producto.whatsapp) {
       const url = `${window.location.origin}/tienda/producto/${producto.id}`;
-      const mensaje = `Viste este producto en La Poderosa del Café y quieres comprarlo:\n\n🛍️ *${producto.titulo}*\n💰 ${formatPrecio(producto.precio)}\n\n${url}`;
+      const mensaje = `Viste este producto en RUMBERA del Café y quieres comprarlo:\n\n🛍️ *${producto.titulo}*\n💰 ${formatPrecio(producto.precio)}\n\n${url}`;
       
       // Intentar abrir WhatsApp nativo
       const whatsappUrl = `whatsapp://send?phone=${producto.whatsapp}&text=${encodeURIComponent(mensaje)}`;
@@ -112,7 +112,7 @@ export const TiendaPage = () => {
           <div>
             <h1 className="text-3xl md:text-4xl font-black text-white flex items-center gap-3">
               <ShoppingBag className="w-8 h-8 text-brand" />
-              La Poderosa Shop
+              RUMBERA Shop
             </h1>
             <p className="text-sm text-text-secondary mt-1">
               Productos oficiales y más. Envíos a todo Caldas.

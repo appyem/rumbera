@@ -10,12 +10,12 @@ interface ServiceModalProps {
 
 export const ServiceModal = ({ service, onClose }: ServiceModalProps) => {
   // WhatsApp Nativo (PC y Móvil)
-  const whatsappMessage = encodeURIComponent(`Hola LA PODEROSA, quiero cotizar el servicio de: ${service.title}`);
+  const whatsappMessage = encodeURIComponent(`Hola RUMBERA, quiero cotizar el servicio de: ${service.title}`);
   const whatsappUrl = `https://wa.me/573227027174?text=${whatsappMessage}`;
 
   // Email Profesional
   const emailSubject = encodeURIComponent(`Cotización de Servicio: ${service.title}`);
-  const emailBody = encodeURIComponent(`Hola LA PODEROSA,\n\nEstoy interesado en cotizar el siguiente servicio:\n\n🎯 Servicio: ${service.title}\n📂 Categoría: ${service.category}\n\nQuedo atento a su respuesta con la disponibilidad, detalles y costos.\n\nGracias.`);
+  const emailBody = encodeURIComponent(`Hola RUMBERA,\n\nEstoy interesado en cotizar el siguiente servicio:\n\n🎯 Servicio: ${service.title}\n📂 Categoría: ${service.category}\n\nQuedo atento a su respuesta con la disponibilidad, detalles y costos.\n\nGracias.`);
   const emailUrl = `mailto:lapoderosadelcafe104.1@gmail.com?subject=${emailSubject}&body=${emailBody}`;
 
   return (

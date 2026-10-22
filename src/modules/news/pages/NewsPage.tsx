@@ -52,7 +52,7 @@ export const NewsPage = () => {
 
   const handleCompartirWhatsApp = (noticia: Noticia) => {
     const url = `${window.location.origin}/noticias`;
-    const mensaje = `¡Hola! 👋 Te invito a leer esta noticia importante de *LA PODEROSA*:\n\n📰 *${noticia.titulo}*\n\n🔗 Entra aquí para leerla completa: ${url}\n\n📲 ¡Descarga nuestra aplicación para no perderte nada!`;
+    const mensaje = `¡Hola! 👋 Te invito a leer esta noticia importante de *RUMBERA*:\n\n📰 *${noticia.titulo}*\n\n🔗 Entra aquí para leerla completa: ${url}\n\n📲 ¡Descarga nuestra aplicación para no perderte nada!`;
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
   };

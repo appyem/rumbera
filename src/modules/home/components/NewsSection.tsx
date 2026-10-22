@@ -62,7 +62,7 @@ export const NewsSection = () => {
 
   const handleCompartirWhatsApp = (noticia: Noticia) => {
     const url = `${window.location.origin}/noticias`;
-    const mensaje = `¡Hola! 👋 Te invito a leer esta noticia importante de *LA PODEROSA*:\n\n📰 *${noticia.titulo}*\n\n🔗 Entra aquí para leerla completa: ${url}\n\n📲 ¡Descarga nuestra aplicación para no perderte nada!`;
+    const mensaje = `¡Hola! 👋 Te invito a leer esta noticia importante de *RUMBERA*:\n\n📰 *${noticia.titulo}*\n\n🔗 Entra aquí para leerla completa: ${url}\n\n📲 ¡Descarga nuestra aplicación para no perderte nada!`;
     
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
@@ -84,7 +84,7 @@ export const NewsSection = () => {
       </div>
 
       {noticias.length === 0 ? (
-        <p className="text-text-secondary text-center py-8 bg-dark-surface rounded-xl border border-dark-border">
+        <p className="text-text-secondary text-center py-8 bg-black/30 backdrop-blur-xl rounded-xl border border-white/10">
           No hay noticias activas publicadas. ¡Vuelve más tarde!
         </p>
       ) : (
@@ -93,7 +93,7 @@ export const NewsSection = () => {
             <article
               key={noticia.id}
               onClick={() => setNoticiaSeleccionada(noticia)}
-              className="bg-dark-surface border border-dark-border rounded-xl overflow-hidden hover:border-brand/50 transition-all cursor-pointer group hover:scale-[1.02] hover:shadow-xl hover:shadow-brand/10"
+              className="bg-black/30 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden hover:border-brand/50 transition-all cursor-pointer group hover:scale-[1.02] hover:shadow-xl hover:shadow-brand/10"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -138,7 +138,7 @@ export const NewsSection = () => {
           <div className="absolute inset-0 bg-black/80 backdrop-blur-md" />
 
           <div
-            className="relative w-full max-w-4xl max-h-[90vh] bg-dark-surface border border-dark-border rounded-2xl overflow-hidden shadow-2xl animate-scale-in flex flex-col"
+            className="relative w-full max-w-4xl max-h-[90vh] bg-black/60 backdrop-blur-2xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl animate-scale-in flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             <button

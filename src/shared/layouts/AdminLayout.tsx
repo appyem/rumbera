@@ -50,7 +50,7 @@ export const AdminLayout = () => {
             <div className="w-8 h-8 rounded-lg bg-brand flex items-center justify-center font-bold text-white">P</div>
             <div>
               <h1 className="font-bold text-sm">Panel Admin</h1>
-              <p className="text-xs text-text-muted">LA PODEROSA</p>
+              <p className="text-xs text-text-muted">RUMBERA</p>
             </div>
           </div>
         </div>
@@ -97,12 +97,12 @@ export const AdminLayout = () => {
                 className="flex items-center gap-2 px-3 py-2 rounded-lg bg-dark-surface border border-dark-border hover:bg-dark-elevated transition-colors text-sm"
               >
                 <Building2 className="w-4 h-4 text-brand" />
-                <span>LA PODEROSA</span>
+                <span>RUMBERA</span>
                 <ChevronDown className="w-4 h-4 text-text-muted" />
               </button>
               {tenantOpen && (
                 <div className="absolute right-0 mt-2 w-56 bg-dark-surface border border-dark-border rounded-xl shadow-xl overflow-hidden z-50 p-2">
-                  <div className="px-3 py-2 rounded-lg bg-brand/10 text-brand text-sm font-medium cursor-pointer">LA PODEROSA (Principal)</div>
+                  <div className="px-3 py-2 rounded-lg bg-brand/10 text-brand text-sm font-medium cursor-pointer">RUMBERA (Principal)</div>
                 </div>
               )}
             </div>

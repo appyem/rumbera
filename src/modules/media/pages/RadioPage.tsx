@@ -16,9 +16,9 @@ import {
 } from '../../../core/firebase/services';
 import { Timestamp } from 'firebase/firestore';
 
-const STREAM_URL = "http://sapircast.caster.fm:10406/q4QD0"; 
+  const STREAM_URL = import.meta.env.VITE_RADIO_STREAM_URL || "https://radiohd2.streaminghd.co:7229/stream";
 const DIAS_SEMANA = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1920';
+const DEFAULT_IMAGE = '/baile.jpg';
 
 export const RadioPage = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -227,7 +227,7 @@ export const RadioPage = () => {
 
           <div className="space-y-2">
             <h1 className="text-3xl md:text-4xl font-bold text-white">
-              {currentProgram ? currentProgram.nombre : 'LA PODEROSA - En Vivo'}
+              {currentProgram ? currentProgram.nombre : 'RUMBERA - En Vivo'}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-text-secondary">
               <div className="flex items-center gap-2">

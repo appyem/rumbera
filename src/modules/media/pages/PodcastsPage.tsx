@@ -17,12 +17,12 @@ const adaptPodcast = (p: Podcast): AdaptedPodcast => {
   // ✅ PRIORIDAD: 1. Imagen personalizada, 2. Miniatura de YouTube, 3. Imagen por defecto
   const imageUrl = (p.imagenUrl && p.imagenUrl.trim() !== '') 
     ? p.imagenUrl 
-    : (p.youtubeVideoId ? obtenerImagenPrevisualizacionYoutube(p.youtubeVideoId) : 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400');
+    : (p.youtubeVideoId ? obtenerImagenPrevisualizacionYoutube(p.youtubeVideoId) : '/baile.jpg');
 
   return {
     id: p.id,
     title: p.titulo,
-    author: 'LA PODEROSA',
+    author: 'RUMBERA',
     episodes: 1,
     duration: 'Variable',
     image: imageUrl,

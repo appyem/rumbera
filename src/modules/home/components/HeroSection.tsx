@@ -13,7 +13,7 @@ interface LiveProgramData {
 }
 
 const DIAS_SEMANA = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1920';
+const DEFAULT_IMAGE = '/baile.jpg';
 
 export const HeroSection = () => {
   const [liveProgram, setLiveProgram] = useState<LiveProgramData | null>(null);
@@ -116,7 +116,7 @@ export const HeroSection = () => {
 
   if (loading) {
     return (
-      <section className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-brand-dark via-dark-surface to-dark-bg border border-dark-border min-h-[400px] flex items-center justify-center">
+      <section className="relative rounded-2xl overflow-hidden bg-black/30 backdrop-blur-xl border border-white/10 min-h-[400px] flex items-center justify-center">
         <div className="animate-spin rounded-full h-12 w-12 border-4 border-brand border-t-transparent"></div>
       </section>
     );
@@ -124,15 +124,15 @@ export const HeroSection = () => {
 
   if (!liveProgram) {
     return (
-      <section className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-brand-dark via-dark-surface to-dark-bg border border-dark-border min-h-[400px]">
+      <section className="relative rounded-2xl overflow-hidden bg-black/30 backdrop-blur-xl border border-white/10 min-h-[400px]">
         <div className="absolute inset-0">
           <img src={DEFAULT_IMAGE} alt="Programación" className="w-full h-full object-cover opacity-30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark-bg via-dark-bg/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent backdrop-blur-sm" />
         </div>
         <div className="relative z-10 p-6 md:p-12 space-y-6 max-w-2xl">
           <div className="space-y-3">
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight text-white">LA PODEROSA</h1>
-            <p className="text-base md:text-lg text-text-secondary max-w-xl">Tu plataforma de medios digitales. Escucha en vivo, noticias y eventos.</p>
+            <h1 className="text-3d-rumbera text-4xl md:text-6xl leading-tight">RUMBERA</h1>
+            <p className="text-base md:text-lg text-text-secondary max-w-xl">Tu plataforma para ¡La rumba que te conecta!. Escucha en vivo, noticias y eventos.</p>
           </div>
           <div className="flex flex-wrap gap-3 pt-2">
             <button onClick={handleEscucharAhora} className="flex items-center gap-2 px-6 py-3 rounded-lg bg-brand hover:bg-brand-light text-white font-semibold shadow-lg shadow-brand/30 transition-all hover:scale-105">
@@ -145,10 +145,10 @@ export const HeroSection = () => {
   }
 
   return (
-    <section className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-brand-dark via-dark-surface to-dark-bg border border-dark-border min-h-[400px]">
+    <section className="relative rounded-2xl overflow-hidden bg-black/30 backdrop-blur-xl border border-white/10 min-h-[400px]">
       <div className="absolute inset-0">
         <img src={liveProgram.imagen} alt={liveProgram.nombre} className="w-full h-full object-cover opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-bg via-dark-bg/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent backdrop-blur-sm" />
       </div>
 
       <div className="relative z-10 p-6 md:p-12 space-y-6 max-w-2xl">
@@ -181,7 +181,7 @@ export const HeroSection = () => {
           <button onClick={handleEscucharAhora} className="flex items-center gap-2 px-6 py-3 rounded-lg bg-brand hover:bg-brand-light text-white font-semibold shadow-lg shadow-brand/30 transition-all hover:scale-105">
             <Play className="w-5 h-5 fill-current" /> Escuchar Ahora
           </button>
-          <a href="/radio" className="flex items-center gap-2 px-6 py-3 rounded-lg bg-dark-elevated/80 backdrop-blur-sm border border-dark-border hover:bg-dark-surface text-white font-semibold transition-all">
+          <a href="/radio" className="flex items-center gap-2 px-6 py-3 rounded-lg bg-black/40 backdrop-blur-xl border border-white/10 border border-dark-border hover:bg-dark-surface text-white font-semibold transition-all">
             <Calendar className="w-5 h-5" /> Ver Programación
           </a>
         </div>

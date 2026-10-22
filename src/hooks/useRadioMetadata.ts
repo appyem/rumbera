@@ -20,7 +20,7 @@ interface IcecastResponse {
 
 export const useRadioMetadata = () => {
   const [metadata, setMetadata] = useState<Metadata>({ 
-    artist: 'La Poderosa', 
+    artist: 'RUMBERA', 
     title: 'Transmitiendo en Vivo' 
   });
 
@@ -41,7 +41,7 @@ export const useRadioMetadata = () => {
 
         if (currentSource && currentSource.title) {
           const parts = currentSource.title.split(' - ');
-          const artist = parts.length > 1 ? parts[0].trim() : 'La Poderosa';
+          const artist = parts.length > 1 ? parts[0].trim() : 'RUMBERA';
           const title = parts.length > 1 ? parts.slice(1).join(' - ').trim() : currentSource.title;
           
           setMetadata({ artist, title });

@@ -36,7 +36,7 @@ export const PagoExitosoPage = () => {
       </h1>
       
       <p className="text-text-secondary text-lg">
-        Gracias por su compra en <span className="text-brand font-bold">La Poderosa Shop</span>.
+        Gracias por su compra en <span className="text-brand font-bold">RUMBERA Shop</span>.
         Hemos recibido su pedido y estamos preparando su envío a Caldas.
       </p>
 

@@ -226,7 +226,7 @@ export const TVPage = () => {
             <div className="flex items-start justify-between">
               <div className="space-y-2">
                                 <h1 className="text-2xl font-bold text-white">{broadcastInfo.name || 'Transmisión en Vivo'}</h1>
-                <p className="text-text-secondary">{broadcastInfo.description || 'LA PODEROSA Televisión'}</p>
+                <p className="text-text-secondary">{broadcastInfo.description || 'RUMBERA Televisión'}</p>
               </div>
               <div className="flex gap-2">
                 <button className="p-2 rounded-full bg-dark-elevated hover:bg-dark-surface transition-colors text-white"><Heart className="w-5 h-5" /></button>

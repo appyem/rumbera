@@ -31,7 +31,7 @@ export const GalleriesPage = () => {
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-white">Nuestros Aliados</h1>
         <p className="text-text-secondary max-w-2xl mx-auto">
-          Empresas e instituciones que confían en nosotros y hacen posible La Poderosa. Conócelos y conéctate con ellos.
+          Empresas e instituciones que confían en nosotros y hacen posible RUMBERA. Conócelos y conéctate con ellos.
         </p>
       </div>
 

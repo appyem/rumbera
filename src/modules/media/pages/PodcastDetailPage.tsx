@@ -26,12 +26,12 @@ export const PodcastDetailPage = () => {
         // ✅ PRIORIDAD DE IMAGEN AQUÍ TAMBIÉN
         const imageUrl = (found.imagenUrl && found.imagenUrl.trim() !== '') 
           ? found.imagenUrl 
-          : (found.youtubeVideoId ? obtenerImagenPrevisualizacionYoutube(found.youtubeVideoId) : 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400');
+          : (found.youtubeVideoId ? obtenerImagenPrevisualizacionYoutube(found.youtubeVideoId) : '/baile.jpg');
 
         setPodcast({
           id: found.id,
           title: found.titulo,
-          author: 'LA PODEROSA',
+          author: 'RUMBERA',
           episodes: 1,
           image: imageUrl,
           category: found.categoria,

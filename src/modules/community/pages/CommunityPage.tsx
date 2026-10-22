@@ -2,7 +2,7 @@ import { Heart, MessageCircle, Share2, UserPlus } from 'lucide-react';
 
 export const CommunityPage = () => {
   const posts = [
-    { id: 1, user: 'Laura Gómez', handle: '@laurag', avatar: 'L', content: '¡Increíble el concierto de anoche! Gracias LA PODEROSA por la cobertura en vivo. 🎸🔥', likes: 124, comments: 18, time: '2h' },
+    { id: 1, user: 'Laura Gómez', handle: '@laurag', avatar: 'L', content: '¡Increíble el concierto de anoche! Gracias RUMBERA por la cobertura en vivo. 🎸🔥', likes: 124, comments: 18, time: '2h' },
     { id: 2, user: 'Andrés Ruiz', handle: '@andresr', avatar: 'A', content: 'Alguien sabe a qué hora es el programa de deportes mañana? No quiero perderme el análisis.', likes: 45, comments: 5, time: '5h' },
   ];
 

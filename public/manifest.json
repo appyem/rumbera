@@ -1,20 +1,21 @@
 {
-  "name": "LA PODEROSA",
-  "short_name": "LA PODEROSA",
-  "description": "Plataforma de Medios Digitales. Escucha en vivo, noticias y eventos.",
+  "name": "RUMBERA - La que te hace bailar",
+  "short_name": "RUMBERA",
+  "description": "Tu plataforma para música tropical. Escucha en vivo, noticias y eventos.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#0A0A0A",
+  "theme_color": "#FF9500",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "/icon-192x192.png",
+      "src": "/logo_rumbera.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512x512.png",
+      "src": "/logo_rumbera.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

@@ -26,7 +26,7 @@ export const PodcastsSection = () => {
     if (podcast.youtubeVideoId) {
       return obtenerImagenPrevisualizacionYoutube(podcast.youtubeVideoId);
     }
-    return 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400';
+    return '/baile.jpg';
   };
 
   if (loading) {
@@ -64,7 +64,7 @@ export const PodcastsSection = () => {
                   alt={podcast.titulo}
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                   onError={(e) => { 
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400'; 
+                    (e.target as HTMLImageElement).src = '/baile.jpg'; 
                   }}
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition-colors">

@@ -177,7 +177,7 @@ export const ProductoDetallePage = () => {
     // Si el producto tiene número de WhatsApp configurado, abrir chat directo
     if (producto.whatsapp) {
       const url = window.location.href;
-      const mensaje = `Viste este producto en La Poderosa del Café y quieres comprarlo:\n\n🛍️ *${producto.titulo}*\n💰 ${formatPrecio(producto.precio)}\n\n${url}`;
+      const mensaje = `Viste este producto en RUMBERA del Café y quieres comprarlo:\n\n🛍️ *${producto.titulo}*\n💰 ${formatPrecio(producto.precio)}\n\n${url}`;
       
       // Intentar abrir WhatsApp nativo (app instalada)
       const whatsappUrl = `whatsapp://send?phone=${producto.whatsapp}&text=${encodeURIComponent(mensaje)}`;
@@ -194,7 +194,7 @@ export const ProductoDetallePage = () => {
     } else {
       // Si no hay número configurado, compartir genérico
       const url = window.location.href;
-      const texto = `¡Mira este producto de LA PODEROSA DEL CAFÉ!\n\n🛍️ *${producto.titulo}*\n💰 ${formatPrecio(producto.precio)}\n\n${url}`;
+      const texto = `¡Mira este producto de RUMBERA DEL CAFÉ!\n\n🛍️ *${producto.titulo}*\n💰 ${formatPrecio(producto.precio)}\n\n${url}`;
       window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, '_blank');
     }
   };

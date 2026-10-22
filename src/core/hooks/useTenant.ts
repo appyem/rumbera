@@ -1,14 +1,13 @@
 import { useMemo } from 'react';
 
-// En el futuro, esto vendrá de Firestore según el dominio o subdominio.
-// Por ahora, es la configuración "LA PODEROSA" por defecto.
+// Configuración de tenant para RUMBERA
 export const useTenant = () => {
   const tenantConfig = useMemo(() => ({
-    name: 'LA PODEROSA',
-    slogan: 'La voz que te mueve', // Configurable
-    logoUrl: '/src/assets/logo.png', // Ajusta la extensión si es .jpg
+    name: 'RUMBERA',
+    slogan: 'La que te hace bailar', // Configurable
+    logoUrl: '/logo_rumbera.png', // Logo nuevo en carpeta public
     theme: {
-      primaryColor: '#E50914',
+      primaryColor: '#FF9500', // Naranja vibrante Rumbera
       backgroundColor: '#0A0A0A',
     },
     features: {

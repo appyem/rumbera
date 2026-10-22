@@ -43,7 +43,7 @@ export const ContactPage = () => {
       <div className="text-center space-y-4">
         <h1 className="text-3xl md:text-4xl font-bold text-white">Contáctanos</h1>
         <p className="text-text-secondary max-w-2xl mx-auto">
-          Estamos aquí para escucharte. Síguenos en nuestras redes, escríbenos o visítanos para hacer parte de La Poderosa.
+          Estamos aquí para escucharte. Síguenos en nuestras redes, escríbenos o visítanos para hacer parte de RUMBERA.
         </p>
       </div>
 
@@ -110,7 +110,7 @@ export const ContactPage = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-white">Ubicación</p>
-                  <p className="text-sm text-text-secondary">Colombia - Emisora La Poderosa del Café</p>
+                  <p className="text-sm text-text-secondary">Colombia - Emisora RUMBERA del Café</p>
                 </div>
               </div>
             </div>

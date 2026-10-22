@@ -14,8 +14,8 @@ import { AdPopup } from '../components/AdPopup';
 import { useRadioMetadata } from '../../hooks/useRadioMetadata';
 
 // ✅ CORREGIDO: Ahora usa HTTPS para evitar bloqueos del navegador
-const STREAM_URL = "https://sapircast.caster.fm:10406/q4QD0";
-const WHATSAPP_URL = "https://wa.me/573227027174?text=" + encodeURIComponent("Hola La Poderosa, quiero más información");
+const STREAM_URL = import.meta.env.VITE_RADIO_STREAM_URL || "https://radiohd2.streaminghd.co:7229/stream";
+const WHATSAPP_URL = "https://wa.me/573227027174?text=" + encodeURIComponent("Hola RUMBERA, quiero más información");
 
 export const MainLayout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,7 +38,7 @@ export const MainLayout = () => {
 
   useEffect(() => {
     const updateCartCount = () => {
-      const cart = JSON.parse(localStorage.getItem('lapoderosa_cart') || '[]') as CartItem[];
+      const cart = JSON.parse(localStorage.getItem('rumbera_cart') || '[]') as CartItem[];
       const count = cart.reduce((acc: number, item: CartItem) => acc + item.cantidad, 0);
       setCartCount(count);
     };
@@ -131,7 +131,7 @@ export const MainLayout = () => {
 
       <div className="fixed inset-0 z-0 block">
         <video autoPlay muted loop playsInline className="w-full h-full object-cover bg-dark-bg">
-          <source src="/fondo_poderosa.mov" type="video/mp4" />
+          <source src="/video_rumbera.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -146,10 +146,10 @@ export const MainLayout = () => {
               </button>
               
               <NavLink to="/" className="flex items-center gap-3">
-                <img src="/logo.png" alt="LA PODEROSA" className="h-16 w-16 rounded-full object-cover shadow-lg shadow-brand/20 border-2 border-brand/30" />
+                <img src="/logo_rumbera.png" alt="RUMBERA" className="h-16 w-16 rounded-full object-cover shadow-lg shadow-brand/20 border-2 border-brand/30" />
                 <div className="flex flex-col">
-                  <h1 className="text-xl font-black tracking-tight leading-none text-white">LA PODEROSA</h1>
-                  <p className="text-[10px] text-white/70 uppercase tracking-widest">Medios Digitales</p>
+                  <h1 className="text-3d-rumbera text-2xl md:text-3xl leading-none">RUMBERA</h1>
+                  <p className="text-[10px] text-white/70 uppercase tracking-widest">¡La rumba que te conecta!</p>
                 </div>
               </NavLink>
             </div>
@@ -196,7 +196,7 @@ export const MainLayout = () => {
                     `flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all text-sm font-medium ${
                       item.admin
                         ? (isActive ? 'bg-brand text-white border-l-2 border-brand' : 'text-brand hover:bg-brand/20')
-                        : (isActive ? 'bg-brand/30 backdrop-blur-sm text-white border-l-2 border-brand' : 'text-white/70 hover:bg-white/10 hover:text-white')
+                        : (isActive ? 'bg-brand/20 backdrop-blur-sm menu-3d-rumbera active border-l-2 border-brand' : 'menu-3d-rumbera hover:bg-white/10')
                     }`
                   }
                 >
@@ -208,7 +208,7 @@ export const MainLayout = () => {
           </aside>
 
           {mobileMenuOpen && (
-            <div className="md:hidden fixed inset-0 z-40 bg-dark-bg/95 backdrop-blur-lg pt-[61px] animate-fade-in">
+            <div className="md:hidden fixed inset-0 z-40 bg-black/80 backdrop-blur-2xl pt-[61px] animate-fade-in">
               <nav className="p-4 space-y-1 overflow-y-auto max-h-[calc(100vh-61px)]">
                 {fullNav.map((item) => (
                   <NavLink 
@@ -220,7 +220,7 @@ export const MainLayout = () => {
                       `flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${
                         item.admin
                           ? (isActive ? 'bg-brand text-white' : 'text-brand hover:bg-brand/20')
-                          : (isActive ? 'bg-brand/20 text-white' : 'text-white/70 hover:bg-white/10 hover:text-white')
+                          : (isActive ? 'bg-brand/20 menu-3d-rumbera active' : 'menu-3d-rumbera hover:bg-white/10')
                       }`
                     }
                   >
@@ -243,7 +243,7 @@ export const MainLayout = () => {
         </div>
 
         {/* ✅ REPRODUCTOR FIJO INFERIOR CON METADATOS EN VIVO */}
-        <div className="fixed bottom-16 md:bottom-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-xl border-t border-white/10 px-4 py-3">
+        <div className="fixed bottom-16 md:bottom-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-2xl border-t border-white/10 px-4 py-3">
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
             <div className="flex items-center gap-3 flex-1 min-w-0">
               <div className="w-10 h-10 rounded-lg bg-brand/20 flex items-center justify-center flex-shrink-0">
@@ -299,7 +299,7 @@ export const MainLayout = () => {
                 end={item.to === '/'} 
                 className={({ isActive }) =>
                   `flex flex-col items-center justify-center w-full h-full gap-1 transition-colors ${
-                    isActive ? 'text-brand' : 'text-white/60'
+                    isActive ? 'menu-3d-rumbera active' : 'menu-3d-rumbera'
                   }`
                 }
               >

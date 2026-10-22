@@ -19,9 +19,9 @@ export const TarjetaPage = () => {
   const [copied, setCopied] = useState(false);
 
   const datos = {
-    nombre: 'LA PODEROSA DEL CAFÉ',
+    nombre: 'RUMBERA DEL CAFÉ',
     eslogan: 'Siempre contigo, Siempre poderosa.',
-    logo: '/logo.png',
+    logo: '/logo_rumbera.png',
     telefono: '+57 322 702 7174',
     whatsapp: '573227027174',
     email: 'comercial@lapoderosa.co',

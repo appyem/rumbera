@@ -95,7 +95,7 @@ export const InstallAppButton = () => {
               </div>
               <h3 className="text-xl font-bold text-white">Instalar en iPhone</h3>
               <p className="text-text-secondary text-sm">
-                Para agregar <strong>La Poderosa</strong> a tu pantalla de inicio, sigue estos 2 pasos:
+                Para agregar <strong>RUMBERA</strong> a tu pantalla de inicio, sigue estos 2 pasos:
               </p>
               <div className="bg-dark-elevated rounded-xl p-4 space-y-3 text-left">
                 <div className="flex items-center gap-3 text-sm text-white">

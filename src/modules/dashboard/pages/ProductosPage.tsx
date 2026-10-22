@@ -342,7 +342,7 @@ export const ProductosPage = () => {
               <input 
                 required 
                 type="text" 
-                placeholder="Ej: Camiseta La Poderosa - Edición Especial" 
+                placeholder="Ej: Camiseta RUMBERA - Edición Especial" 
                 value={formData.titulo} 
                 onChange={e => setFormData({...formData, titulo: e.target.value})} 
                 className="w-full px-4 py-2.5 rounded-lg bg-dark-bg border border-dark-border text-white focus:border-brand focus:outline-none"
