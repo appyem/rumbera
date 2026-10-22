@@ -5,19 +5,6 @@ interface Metadata {
   title: string;
 }
 
-interface IcecastSource {
-  listenurl?: string;
-  title?: string;
-}
-
-interface IcecastStats {
-  source: IcecastSource | IcecastSource[];
-}
-
-interface IcecastResponse {
-  icestats: IcecastStats;
-}
-
 export const useRadioMetadata = () => {
   const [metadata, setMetadata] = useState<Metadata>({ 
     artist: 'RUMBERA', 
@@ -27,16 +14,18 @@ export const useRadioMetadata = () => {
   useEffect(() => {
     const fetchMetadata = async () => {
       try {
-        // Usamos un proxy CORS gratuito para evitar el bloqueo del navegador
         const targetUrl = 'https://radiohd2.streaminghd.co:7229/status-json.xsl';
-        const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
+        // Usamos AllOrigins, que es estable y no bloquea solicitudes de streaming como corsproxy.io
+        const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
         
         const response = await fetch(proxyUrl);
-        const data: IcecastResponse = await response.json();
+        if (!response.ok) throw new Error('Network response was not ok');
         
-        const sources = data.icestats.source;
+        const data = await response.json();
+        
+        const sources = data.icestats?.source;
         const currentSource = Array.isArray(sources) 
-          ? sources.find((s) => s.listenurl?.includes('q4QD0')) 
+          ? sources[0] // Tomamos la primera fuente activa
           : sources;
 
         if (currentSource && currentSource.title) {
@@ -46,8 +35,9 @@ export const useRadioMetadata = () => {
           
           setMetadata({ artist, title });
         }
-      } catch {
-        // Silencioso: si falla, mantiene el último valor conocido o el por defecto
+      } catch (error) {
+        // Silencioso: si falla, mantiene el valor por defecto sin saturar la consola
+        console.warn('Metadatos de streaming no disponibles temporalmente');
       }
     };
 

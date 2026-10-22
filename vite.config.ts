@@ -7,36 +7,36 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'logo_rumbera.png', 'robots.txt', 'apple-touch-icon.png', 'icon-192x192.png', 'icon-512x512.png'],
+      includeAssets: ['favicon.ico', 'logo_rumbera.png', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: 'RUMBERA - Plataforma de ¡La rumba que te conecta!',
-        short_name: 'Rumbera',
-        description: 'Tu plataforma para ¡La rumba que te conecta!. Música en vivo, noticias y eventos.',
-        theme_color: '#000000',
-        background_color: '#0a0a0a',
+        name: 'RUMBERA - ¡La rumba que te conecta!',
+        short_name: 'RUMBERA',
+        description: 'Tu plataforma de música tropical. Escucha en vivo, noticias y eventos.',
+        theme_color: '#FF9500',
+        background_color: '#0A0A0A',
         display: 'standalone',
         orientation: 'portrait',
         scope: '/',
         start_url: '/',
         icons: [
           {
-            src: 'logo-192x192.png',
+            src: '/logo_rumbera.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any maskable'
           },
           {
-            src: 'logo-512x512.png',
+            src: '/logo_rumbera.png',
             sizes: '512x512',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any maskable'
           }
         ]
       },
       workbox: {
         cleanupOutdatedCaches: true,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webmanifest,jpg}'],
-        // 🚨 SOLUCIÓN: Aumentar el límite a 10 MB para permitir el logo.jpg actual
-        // (Ver recomendación importante abajo)
-        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024 
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webmanifest,jpg,mp4}'],
+        maximumFileSizeToCacheInBytes: 15 * 1024 * 1024
       }
     })
   ]
