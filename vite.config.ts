@@ -20,13 +20,13 @@ export default defineConfig({
         start_url: '/',
         icons: [
           {
-            src: '/logo_rumbera.png',
+            src: '/icono-rumbera-512.png',
             sizes: '192x192',
             type: 'image/png',
             purpose: 'any maskable'
           },
           {
-            src: '/logo_rumbera.png',
+            src: '/icono-rumbera-512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'
